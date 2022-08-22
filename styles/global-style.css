@@ -8,14 +8,17 @@
   --font-secondary: rgba(255, 255, 255, 0.55);
   --font-disabled: rgba(255, 255, 255, 0.35);
   --accent: hsl(240, 50%, 60%);
+  --accent-glow-1: hsla(240, 50%, 60%, 0.35);
+  --accent-glow-2: hsla(240, 50%, 60%, 0.25);
   --font-dark-primary: rgba(0, 0, 0, 0.8);
   --accent-bg: hsla(240, 50%, 60%, 0.15);
   --accent-bg-hovered: hsla(240, 50%, 60%, 0.2);
-  --accent-hovered: hsl(240, 50%, 65%);
+  --accent-hovered: hsl(240, 50%, 80%);
   --accent-disabled: hsla(240, 25%, 60%, 0.25);
   --border-radius-sm: 0.15rem;
   --border-radius: 0.25rem;
   --border-radius-md: 0.4rem;
+  --box-sdw: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 *,

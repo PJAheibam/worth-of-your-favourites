@@ -1,5 +1,20 @@
 .title {
   text-align: center;
+  margin-bottom: 1em;
+}
+
+.mx-1 {
+  margin-block: 0.25rem;
+}
+.mx-2 {
+  margin-block: 0.5rem;
+}
+.mx-3 {
+  margin-block: 0.1rem;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .d-flex {

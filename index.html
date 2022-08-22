@@ -33,7 +33,10 @@
               <p class="text"></p>
               <p class="text"></p>
             </div>
-            <button class="btn" disabled>Select</button>
+            <button class="btn" disabled>
+              Selected
+              <div class="check"></div>
+            </button>
           </div>
         </div>
         <div class="side-bar">
@@ -62,7 +65,38 @@
               </li>
             </ul>
           </div>
-          <div class="budget-container"></div>
+          <div class="budget-container">
+            <h2 class="title">Budget</h2>
+            <div class="block">
+              <label
+                >Per Player <input id="per-player-cost" type="number"
+              /></label>
+            </div>
+            <button class="btn w-100">Calculate</button>
+            <div class="result block">
+              <label
+                >Player Expenses
+                <div class="amount-wrapper">
+                  $ <span class="amount">0000</span>
+                </div></label
+              >
+            </div>
+            <div class="block">
+              <label>Manager <input type="number" /></label>
+            </div>
+            <div class="block">
+              <label>Coach <input type="number" /></label>
+            </div>
+            <button class="btn w-100 mx-2">Calculate Total</button>
+            <div class="result block">
+              <label
+                >Total
+                <div class="amount-wrapper">
+                  $ <span class="amount">0000</span>
+                </div></label
+              >
+            </div>
+          </div>
         </div>
       </div>
     </main>

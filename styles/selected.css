@@ -1,0 +1,76 @@
+/* Sidebar selected styles */
+
+.selected-container {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--bg-paper);
+  border-radius: var(--border-radius-md);
+  height: fit-content;
+}
+/* list */
+.list {
+  list-style: none;
+}
+.list li {
+  /* counter-increment: counter; */
+  margin-block: 0.5rem;
+  background-color: var(--bg-darker);
+  border-radius: 1.5rem;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  transition: all 300ms ease;
+}
+.list > .active {
+  color: var(--font-primary);
+  background-image: linear-gradient(
+    to right,
+    hsla(125, 50%, 50%, 0.025),
+    var(--bg-darker)
+  );
+}
+.list li .sl-no {
+  display: inline-block;
+  color: var(--font-secondary);
+  padding-top: 0.05rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 1.5rem;
+  background-color: var(--bg-primary);
+  transition: all 300ms ease;
+}
+.list > .active .sl-no {
+  color: var(--font-dark-primary);
+  background-color: hsla(125, 50%, 50%, 1);
+  box-shadow: 0 0 5px hsla(125, 50%, 50%, 0.8),
+    0 0 20px hsla(125, 50%, 50%, 0.5);
+}
+.list > .active:hover .sl-no {
+  background-color: hsla(125, 50%, 65%, 1);
+  box-shadow: 0 0 10px hsla(125, 50%, 50%, 0.8),
+    0 0 20px hsla(125, 50%, 50%, 0.5);
+}
+
+.list li .name {
+  display: inline-block;
+  user-select: none;
+  color: var(--font-secondary);
+  font-weight: bold;
+  margin-left: 1rem;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  transition: all 500ms ease;
+}
+.list > .active .name {
+  color: var(--font-primary);
+}
+.list > .active:hover .name {
+  color: hsla(125, 60%, 70%, 1);
+  filter: drop-shadow(0 0 10px hsla(125, 50%, 50%, 0.35))
+    drop-shadow(0 0 20px hsla(125, 50%, 50%, 0.15));
+}
