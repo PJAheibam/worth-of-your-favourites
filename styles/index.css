@@ -4,6 +4,7 @@
 @import url(./button.css);
 @import url(./budget.css);
 @import url(./selected.css);
+@import url(./card-design.css);
 
 .header {
   display: flex;
@@ -57,7 +58,8 @@
 }
 .grid {
   display: grid;
-  width: 80%;
+  width: 75%;
+  height: fit-content;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 1fr;
   grid-auto-flow: row;
