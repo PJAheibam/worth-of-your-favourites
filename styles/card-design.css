@@ -11,7 +11,7 @@
 .grid-item .cover-image {
   width: 100%;
   height: 10rem;
-  background-color: blue;
+  background-color: var(--bg-darker);
 }
 .grid-item .title {
   margin-block: 1rem;

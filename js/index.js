@@ -5,10 +5,75 @@ const players = [
     assist: 126,
     imgUrl: "",
   },
+  {
+    name: "Neymar Jr",
+    goals: 35,
+    assist: 120,
+    imgUrl: "",
+  },
+  {
+    name: "Lionel Messi",
+    goals: 36,
+    assist: 126,
+    imgUrl: "",
+  },
+  {
+    name: "Lionel Messi",
+    goals: 36,
+    assist: 126,
+    imgUrl: "",
+  },
+  {
+    name: "Lionel Messi",
+    goals: 36,
+    assist: 126,
+    imgUrl: "",
+  },
+  {
+    name: "Lionel Messi",
+    goals: 36,
+    assist: 126,
+    imgUrl: "",
+  },
+  {
+    name: "Lionel Messi",
+    goals: 36,
+    assist: 126,
+    imgUrl: "",
+  },
+  {
+    name: "Lionel Messi",
+    goals: 36,
+    assist: 126,
+    imgUrl: "",
+  },
+  {
+    name: "Lionel Messi",
+    goals: 36,
+    assist: 126,
+    imgUrl: "",
+  },
+  {
+    name: "Lionel Messi",
+    goals: 36,
+    assist: 126,
+    imgUrl: "",
+  },
+  {
+    name: "Lionel Messi",
+    goals: 36,
+    assist: 126,
+    imgUrl: "",
+  },
+  {
+    name: "Lionel Messi",
+    goals: 36,
+    assist: 126,
+    imgUrl: "",
+  },
 ];
 
 const playersContainer = document.getElementById("players");
-console.log(playersContainer);
 
 function addPlayerToTheList(player) {
   const goals = document.createElement("p");
@@ -42,7 +107,6 @@ function addPlayerToTheList(player) {
 
   const gridItem = document.createElement("div");
   gridItem.classList.add("grid-item");
-  console.log(gridItem);
 
   subTitleContainer.appendChild(goals);
   subTitleContainer.appendChild(circle);
@@ -64,3 +128,5 @@ function showPlayers() {
 }
 
 showPlayers();
+
+playersContainer.addEventListener("click", handleClick);

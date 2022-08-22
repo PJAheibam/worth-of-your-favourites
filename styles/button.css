@@ -31,3 +31,6 @@
   color: var(--font-disabled);
   background-color: var(--accent-disabled);
 }
+.btn:disabled:hover {
+  box-shadow: none;
+}

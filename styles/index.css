@@ -1,10 +1,10 @@
 @import url(./global-style.css);
 @import url(./utility.css);
 @import url(./check-icon.css);
-@import url(./button.css);
 @import url(./budget.css);
 @import url(./selected.css);
 @import url(./card-design.css);
+@import url(./button.css);
 
 .header {
   display: flex;
@@ -63,7 +63,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 1fr;
   grid-auto-flow: row;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 
 .side-bar {
