@@ -1,0 +1,19 @@
+@import url(./global-style.css);
+
+.header {
+  width: 100%;
+  min-height: max(400px, 60vh);
+  max-height: 60vh;
+  background-color: var(--bg-darker);
+}
+.left-header-img {
+}
+.right-header-img {
+}
+.header-content {
+}
+
+.header .title {
+}
+.header .sub-title {
+}

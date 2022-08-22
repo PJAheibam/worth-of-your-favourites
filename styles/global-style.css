@@ -1,3 +1,5 @@
+@import url(./font-faces.css);
+
 :root {
   --bg-primary: hsl(240, 15%, 10%);
   --bg-darker: hsl(240, 15%, 8%);
@@ -15,20 +17,12 @@
 *,
 *::before,
 *::after {
+  color: var(--font-primary);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.header {
-}
-.left-header-img {
-}
-.right-header-img {
-}
-.header-content {
-}
 
-.header .title {
-}
-.header .sub-title {
+body {
+  background: var(--bg-primary);
 }
