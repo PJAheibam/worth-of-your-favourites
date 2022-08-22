@@ -1,0 +1,34 @@
+:root {
+  --bg-primary: hsl(240, 15%, 10%);
+  --bg-darker: hsl(240, 15%, 8%);
+  --bg-paper: hsl(240, 15%, 15%);
+  --font-primary: rgba(255, 255, 255, 0.85);
+  --font-secondary: rgba(255, 255, 255, 0.75);
+  --font-disabled: rgba(255, 255, 255, 0.5);
+  --accent: hsl(240, 50%, 60%);
+  --accent-bg: hsla(240, 50%, 60%, 0.15);
+  --accent-bg-hovered: hsla(240, 50%, 60%, 0.2);
+  --accent-hovered: hsl(240, 50%, 65%);
+  --accent-disabled: hsl(240, 10%, 50%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+}
+.left-header-img {
+}
+.right-header-img {
+}
+.header-content {
+}
+
+.header .title {
+}
+.header .sub-title {
+}
