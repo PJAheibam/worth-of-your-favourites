@@ -1,23 +1,38 @@
 .check {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
+  display: none;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
+.check::before {
+  position: absolute;
+  content: "";
+  top: 55%;
+  left: 35%;
+  width: 0.2rem;
+  height: 50%;
+  transform-origin: center;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  border-radius: 0.1rem;
+  background-color: var(--success);
+  box-shadow: 0 0 10px var(--success-glow-2), 0 0 20px var(--success-glow-1);
+  backdrop-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
 .check::after {
   position: absolute;
   content: "";
-  top: 25%;
-  left: 65%;
+  top: 34%;
+  left: 31%;
   width: 90%;
-  height: 45%;
+  height: 0.2rem;
   transform-origin: center;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  /* border-radius: 1rem; */
-  border-bottom: 0.2rem solid black;
-  border-left: 0.2rem solid black;
+  transform: rotate(-45deg);
+  border-radius: 0.1rem;
+  background-color: var(--success);
+  box-shadow: 0 0 10px var(--success-glow-2), 0 0 20px var(--success-glow-1);
   backdrop-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }

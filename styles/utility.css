@@ -2,7 +2,9 @@
   text-align: center;
   margin-bottom: 1em;
 }
-
+.justify-center {
+  justify-content: center !important;
+}
 .mx-1 {
   margin-block: 0.25rem;
 }

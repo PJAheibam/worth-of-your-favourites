@@ -71,6 +71,6 @@
 }
 .list > .active:hover .name {
   color: hsla(125, 60%, 70%, 1);
-  filter: drop-shadow(0 0 10px hsla(125, 50%, 50%, 0.35))
-    drop-shadow(0 0 20px hsla(125, 50%, 50%, 0.15));
+  filter: drop-shadow(0 0 10px var(--success-glow-2))
+    drop-shadow(0 0 20px var(--success-glow-1));
 }
