@@ -1,0 +1,24 @@
+.btn {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--accent);
+  border: none;
+  outline: none;
+  border-radius: 0.15em;
+  background-color: var(--accent-bg);
+  padding: 0.25em 1em;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--accent-hovered);
+  background-color: var(--accent-bg-hovered);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  color: var(--font-disabled);
+  background-color: var(--accent-disabled);
+}

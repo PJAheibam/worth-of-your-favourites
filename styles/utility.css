@@ -1,0 +1,21 @@
+.d-flex {
+  display: flex;
+}
+.g-wrapper {
+  position: relative;
+  margin-inline: auto;
+  max-width: 1600px;
+  min-height: 100%;
+  padding-inline: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .g-wrapper {
+    padding-inline: 4rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .g-wrapper {
+    padding-inline: 5rem;
+  }
+}

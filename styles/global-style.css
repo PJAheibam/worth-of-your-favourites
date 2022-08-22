@@ -11,16 +11,28 @@
   --accent-bg: hsla(240, 50%, 60%, 0.15);
   --accent-bg-hovered: hsla(240, 50%, 60%, 0.2);
   --accent-hovered: hsl(240, 50%, 65%);
-  --accent-disabled: hsl(240, 10%, 50%);
+  --accent-disabled: hsla(240, 25%, 60%, 0.25);
 }
 
 *,
 *::before,
 *::after {
   color: var(--font-primary);
+  font-family: "Poppins Regular";
+  letter-spacing: 1px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+  font-family: "Inter Medium";
 }
 
 body {
