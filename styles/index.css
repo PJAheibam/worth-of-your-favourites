@@ -74,5 +74,10 @@
 }
 
 footer {
-  min-height: 300px;
+  margin-top: 3rem;
+  background-color: var(--bg-paper);
+}
+.copy-right {
+  margin: auto;
+  text-align: center;
 }
