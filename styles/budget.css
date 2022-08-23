@@ -25,15 +25,19 @@
   justify-content: space-between;
 }
 
-/* .result.block {
-  margin-block: 1rem;
-} */
+.result .amount-wrapper {
+  color: var(--font-secondary);
+}
 .result .amount {
-  margin-left: auto;
+  color: inherit;
 }
 .budget-container input {
+  /* color: var(--accent); */
   background-color: var(--bg-darker);
+  font-family: "Inter Regular";
   font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.75rem;
   width: 50%;
   border-radius: var(--border-radius-sm);

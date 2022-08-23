@@ -55,37 +55,76 @@
           </div>
           <div class="budget-container">
             <h2 class="title">Budget</h2>
-            <div class="block">
-              <label
-                >Per Player <input id="per-player-cost" type="number"
-              /></label>
-            </div>
-            <button class="btn w-100 justify-center">Calculate</button>
-            <div class="result block">
-              <label
-                >Player Expenses
-                <div class="amount-wrapper">
-                  $ <span class="amount">0000</span>
-                </div></label
+            <!-- first part -->
+            <form id="per-player-form">
+              <div class="block">
+                <label
+                  >Per Player
+                  <input
+                    required
+                    id="per-player-cost"
+                    type="number"
+                    step="0.01"
+                    placeholder="$ amount"
+                    autocomplete="off"
+                /></label>
+              </div>
+              <button
+                type="submit"
+                id="calculate"
+                class="btn w-100 mx-2 justify-center"
               >
-            </div>
-            <div class="block">
-              <label>Manager <input type="number" /></label>
-            </div>
-            <div class="block">
-              <label>Coach <input type="number" /></label>
-            </div>
-            <button class="btn w-100 mx-2 justify-center">
-              Calculate Total
-            </button>
-            <div class="result block">
-              <label
-                >Total
-                <div class="amount-wrapper">
-                  $ <span class="amount">0000</span>
-                </div></label
+                Calculate
+              </button>
+              <div class="result block">
+                <label
+                  >Player Expenses
+                  <div class="amount-wrapper">
+                    $ <span id="player-expenses" class="amount">0000</span>
+                  </div></label
+                >
+              </div>
+            </form>
+
+            <!-- second part -->
+            <form id="total-cost-form">
+              <div class="block">
+                <label
+                  >Manager
+                  <input
+                    required
+                    id="manager-cost"
+                    type="number"
+                    step="0.01"
+                    placeholder="$ amount"
+                /></label>
+              </div>
+              <div class="block">
+                <label
+                  >Coach
+                  <input
+                    required
+                    id="coach-cost"
+                    type="number"
+                    step="0.01"
+                    placeholder="$ amount"
+                /></label>
+              </div>
+              <button
+                id="calculate-total"
+                class="btn w-100 mx-2 justify-center"
               >
-            </div>
+                Calculate Total
+              </button>
+              <div class="result block">
+                <label
+                  >Total
+                  <div class="amount-wrapper">
+                    $ <span id="total-cost" class="amount">0000</span>
+                  </div></label
+                >
+              </div>
+            </form>
           </div>
         </div>
       </div>

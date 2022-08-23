@@ -15,13 +15,16 @@
   --accent-bg-hovered: hsla(210, 100%, 60%, 0.2);
   --accent-hovered: hsl(210, 100%, 70%);
   --accent-disabled: hsla(210, 30%, 60%, 0.25);
-  --success: hsla(125, 60%, 70%, 1);
+  --success: hsla(125, 50%, 55%, 1);
+  --success-glow: hsla(125, 60%, 65%, 1);
   --success-glow-1: hsla(125, 50%, 50%, 0.15);
   --success-glow-2: hsla(125, 50%, 50%, 0.35);
   --border-radius-sm: 0.15rem;
   --border-radius: 0.25rem;
   --border-radius-md: 0.4rem;
   --box-sdw: 0rem 0.5rem 1.5rem rgba(0, 0, 0, 0.35);
+  --text-glow-success: 0 0 10px var(--success-glow-2),
+    0 0 20px var(--success-glow-1);
 }
 
 *,
