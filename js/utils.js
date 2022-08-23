@@ -8,6 +8,7 @@ const totalCostForm = document.getElementById("total-cost-form");
 const managerCost = document.getElementById("manager-cost");
 const coachCost = document.getElementById("coach-cost");
 const totalCost = document.getElementById("total-cost");
+const maxWarningModal = document.getElementById("max-warning-modal");
 
 function addPlayerToTheList(player) {
   const goals = document.createElement("p");
@@ -57,8 +58,15 @@ function addPlayerToTheList(player) {
 }
 
 // click handlers //
+function closeModal() {
+  maxWarningModal.style.display = "none";
+}
+
 function handleClick(e) {
-  if (selectedTotalPlayer === 5) return;
+  if (selectedTotalPlayer === 5) {
+    maxWarningModal.style.display = "flex";
+    return;
+  }
 
   const element = e.target;
   if (element.localName === "button") {
@@ -97,9 +105,9 @@ function handleClick(e) {
 }
 
 function handleCalculate(e) {
+  console.log("submit");
   e.preventDefault();
 
-  // playerExpenses.parentElement.style.color = "var(--font-primary)";
   playerExpenses.parentElement.classList.add("font-glow-success");
   playerExpenses.innerText = parseFloat(
     (parseFloat(perPlayerCost.value) * selectedTotalPlayer).toFixed(2)
@@ -110,7 +118,7 @@ function handleCalculate(e) {
 
 function handleTotalCost(e) {
   e.preventDefault();
-  perPlayerForm.onsubmit = handleCalculate(e);
+
   const totalExpense =
     parseFloat(managerCost.value) +
     parseFloat(coachCost.value) +

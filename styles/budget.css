@@ -44,6 +44,7 @@
   border: var(--accent-bg);
 }
 .budget-container input:focus-visible {
+  color: var(--success);
   outline: 2px solid var(--accent);
 }
 /* Chrome, Safari, Edge, Opera */

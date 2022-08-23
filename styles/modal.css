@@ -1,0 +1,26 @@
+.modal {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 25, 0.5);
+  backdrop-filter: blur(0.15rem);
+  /* transition: all 300ms ease; */
+}
+
+.modal .container {
+  position: s;
+  width: 50%;
+  min-height: 200px;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-md);
+  background-color: rgba(0, 0, 5, 0.65);
+  backdrop-filter: blur(100px);
+}

@@ -15,6 +15,11 @@
   --accent-bg-hovered: hsla(210, 100%, 60%, 0.2);
   --accent-hovered: hsl(210, 100%, 70%);
   --accent-disabled: hsla(210, 30%, 60%, 0.25);
+  --danger: hsla(0, 50%, 50%, 1);
+  --danger-bg: hsla(0, 80%, 55%, 0.05);
+  --danger-glow: hsla(0, 80%, 60%, 1);
+  --danger-glow-1: hsla(0, 80%, 55%, 0.25);
+  --danger-glow-2: hsla(0, 80%, 55%, 0.45);
   --success: hsla(125, 50%, 55%, 1);
   --success-glow: hsla(125, 60%, 65%, 1);
   --success-glow-1: hsla(125, 50%, 50%, 0.15);

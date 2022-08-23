@@ -5,6 +5,7 @@
 @import url(./selected.css);
 @import url(./card-design.css);
 @import url(./button.css);
+@import url(./modal.css);
 
 .header {
   display: flex;

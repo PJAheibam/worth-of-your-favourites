@@ -83,5 +83,6 @@ showPlayers();
 
 // event listeners
 playersContainer.addEventListener("click", handleClick);
-perPlayerForm.onsubmit = handleCalculate;
+perPlayerForm.addEventListener("submit", handleCalculate);
+// maxWarningModal.addEventListener("click", handleMaxWarning);
 totalCostForm.onsubmit = handleTotalCost;

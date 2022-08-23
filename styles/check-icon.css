@@ -6,6 +6,8 @@
   height: 1.5rem;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0 0 5px var(--success-glow-2))
+    drop-shadow(0 0 15px var(--success-glow-1));
 }
 
 .check::before {
@@ -19,8 +21,6 @@
   transform: translate(-50%, -50%) rotate(-45deg);
   border-radius: 0.1rem;
   background-color: var(--success);
-  box-shadow: 0 0 10px var(--success-glow-2), 0 0 20px var(--success-glow-1);
-  backdrop-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 .check::after {
   position: absolute;
@@ -33,6 +33,4 @@
   transform: rotate(-45deg);
   border-radius: 0.1rem;
   background-color: var(--success);
-  box-shadow: 0 0 10px var(--success-glow-2), 0 0 20px var(--success-glow-1);
-  backdrop-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
