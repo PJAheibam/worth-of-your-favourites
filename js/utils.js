@@ -27,7 +27,7 @@ function addPlayerToTheList(player) {
 
   const coverImage = document.createElement("div");
   coverImage.classList.add("cover-image");
-  coverImage.style.backgroundImage = player.imgUrl;
+  coverImage.style.backgroundImage = `url(${player.imgUrl})`;
 
   //content
   const content = document.createElement("div");
@@ -39,6 +39,7 @@ function addPlayerToTheList(player) {
 
   const button = document.createElement("button");
   button.classList.add("btn");
+  button.classList.add("mt-auto");
   button.innerText = "Select";
 
   const gridItem = document.createElement("div");

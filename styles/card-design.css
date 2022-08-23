@@ -1,17 +1,23 @@
 .grid-item {
-  padding: 0 0 1rem 0;
+  padding: 0 0 1.5rem 0;
   border-radius: var(--border-radius);
   background-color: var(--bg-paper);
   min-height: 200px;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 .grid-item .content {
   padding-inline: 1.5rem;
+  margin-bottom: 1rem;
 }
 .grid-item .cover-image {
   width: 100%;
-  height: 10rem;
+  height: 15rem;
   background-color: var(--bg-darker);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-item .title {
   margin-block: 1rem;

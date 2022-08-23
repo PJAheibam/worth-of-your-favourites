@@ -10,7 +10,7 @@
   transition: all 300ms ease;
 }
 .selected-container:hover {
-  transform: translate(0%, -1%);
+  transform: translate(0%, -1%) scale(1.01);
   box-shadow: var(--box-sdw);
 }
 /* list */
@@ -37,8 +37,8 @@
 }
 .list li .sl-no {
   display: inline-block;
-  color: var(--font-secondary);
-  padding-top: 0.05rem;
+  color: var(--font-disabled);
+  padding-top: 0.15rem;
   width: 1.75rem;
   height: 1.75rem;
   font-weight: bold;
@@ -63,7 +63,7 @@
 .list li .name {
   display: inline-block;
   user-select: none;
-  color: var(--font-secondary);
+  color: var(--font-disabled);
   font-weight: bold;
   margin-left: 1rem;
   width: 70%;

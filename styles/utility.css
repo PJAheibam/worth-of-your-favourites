@@ -1,16 +1,22 @@
 .title {
   text-transform: capitalize;
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 0.75em;
 }
 .text-danger {
   color: var(--danger-glow) !important;
+}
+.text-success {
+  color: var(--success) !important;
 }
 .sub-title-container .text {
   text-transform: capitalize;
 }
 .justify-center {
   justify-content: center !important;
+}
+.mt-auto {
+  margin-top: auto !important;
 }
 .mx-1 {
   margin: 0 !important;
@@ -47,6 +53,10 @@
   max-width: 1600px;
   min-height: 100%;
   padding-inline: 2.5rem;
+}
+.stick-top {
+  position: sticky;
+  top: 0;
 }
 
 .glow-success {
