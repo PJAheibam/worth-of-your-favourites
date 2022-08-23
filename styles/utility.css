@@ -4,9 +4,13 @@
   margin-bottom: 0.75em;
 }
 .text-danger {
+  font-size: inherit;
+  font-weight: inherit;
   color: var(--danger-glow) !important;
 }
 .text-success {
+  font-size: inherit;
+  font-weight: inherit;
   color: var(--success) !important;
 }
 .sub-title-container .text {
@@ -50,6 +54,7 @@
 .g-wrapper {
   position: relative;
   margin-inline: auto;
+  width: 100%;
   max-width: 1600px;
   min-height: 100%;
   padding-inline: 2.5rem;
