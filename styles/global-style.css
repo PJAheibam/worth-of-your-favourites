@@ -22,7 +22,7 @@
   --danger-glow-2: hsla(0, 80%, 55%, 0.45);
   --success: hsla(125, 50%, 55%, 1);
   --success-glow: hsla(125, 60%, 65%, 1);
-  --success-glow-1: hsla(125, 50%, 50%, 0.15);
+  --success-glow-1: hsla(125, 50%, 50%, 0.175);
   --success-glow-2: hsla(125, 50%, 50%, 0.35);
   --border-radius-sm: 0.15rem;
   --border-radius: 0.25rem;
@@ -41,6 +41,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 500;
 }
 
 h1,

@@ -19,6 +19,7 @@ function addPlayerToTheList(player) {
   circle.classList.add("circle");
 
   const assist = document.createElement("p");
+  assist.classList.add("text");
   assist.innerText = player.assist + " assit";
 
   const subTitleContainer = document.createElement("div");
@@ -93,7 +94,9 @@ function handleClick(e) {
     // 2nd approach start
     selected.children[selectedTotalPlayer].classList.add("active");
     selected.children[selectedTotalPlayer].children[1].innerText = playerName;
-
+    element.previousSibling.children[1].children[1].classList.add(
+      "glow-success"
+    );
     element.innerHTML = `
       <div class="check"></div>
       Selected

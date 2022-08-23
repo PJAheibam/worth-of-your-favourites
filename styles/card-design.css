@@ -19,10 +19,11 @@
 .sub-title-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .sub-title-container .text {
   color: var(--font-secondary);
+  font-weight: 600;
 }
 .circle {
   width: 0.5rem;

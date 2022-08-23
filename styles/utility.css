@@ -3,6 +3,9 @@
   text-align: center;
   margin-bottom: 1em;
 }
+.text-danger {
+  color: var(--danger-glow) !important;
+}
 .sub-title-container .text {
   text-transform: capitalize;
 }
@@ -44,6 +47,12 @@
   max-width: 1600px;
   min-height: 100%;
   padding-inline: 2.5rem;
+}
+
+.glow-success {
+  background-color: var(--success-glow) !important;
+  filter: drop-shadow(0 0 10px var(--success-glow-2))
+    drop-shadow(0 0 20px var(--success-glow-1));
 }
 
 .font-glow-success {
