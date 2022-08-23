@@ -40,6 +40,7 @@
 }
 .header-content {
   margin: auto;
+  z-index: 2;
 }
 
 .header .title {
