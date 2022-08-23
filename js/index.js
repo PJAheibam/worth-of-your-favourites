@@ -79,10 +79,10 @@ function showPlayers() {
   }
 }
 
+//
 showPlayers();
 
 // event listeners
 playersContainer.addEventListener("click", handleClick);
 perPlayerForm.addEventListener("submit", handleCalculate);
-// maxWarningModal.addEventListener("click", handleMaxWarning);
-totalCostForm.onsubmit = handleTotalCost;
+totalCostForm.addEventListener("submit", handleTotalCost);

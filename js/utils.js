@@ -20,7 +20,7 @@ function addPlayerToTheList(player) {
 
   const assist = document.createElement("p");
   assist.classList.add("text");
-  assist.innerText = player.assist + " assit";
+  assist.innerText = player.assist + " assist";
 
   const subTitleContainer = document.createElement("div");
   subTitleContainer.classList.add("sub-title-container");
@@ -65,13 +65,13 @@ function closeModal() {
 }
 
 function handleClick(e) {
-  if (selectedTotalPlayer === 5) {
-    maxWarningModal.style.display = "flex";
-    return;
-  }
-
   const element = e.target;
   if (element.localName === "button") {
+    if (selectedTotalPlayer === 5) {
+      maxWarningModal.style.display = "flex";
+      return;
+    }
+
     const playerName = element.previousSibling.children[0].innerText;
     const selected = document.getElementById("selected-list");
     // 1st approach
@@ -103,6 +103,7 @@ function handleClick(e) {
       Selected
     `;
     element.setAttribute("disabled", "true");
+    element.style.pointerEvents = "none";
     selectedTotalPlayer++;
     //2nd approach end
   }
